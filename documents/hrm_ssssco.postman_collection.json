@@ -1,0 +1,1806 @@
+{
+	"info": {
+		"_postman_id": "01c29eea-935b-4957-b23a-1cfac6272f92",
+		"name": "hrm_ssssco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17406241"
+	},
+	"item": [
+		{
+			"name": "companies",
+			"item": [
+				{
+					"name": "localhost:5000/companies/getCompanies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/companies/getCompanies",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"companies",
+								"getCompanies"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "localhost:5000/auth/SuperAdminLogin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Emp_name\":\"admin\",\r\n    \"Emp_password\":\"123456789\",\r\n    \"company_code\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/auth/SuperAdminLogin",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"SuperAdminLogin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "dirMenues",
+			"item": [
+				{
+					"name": "localhost:5000/dirmenus/GetDirMenus",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4Nzg2OTE3NSwiZXhwIjoxNjg3ODcyNzc1fQ.AcuwAvv5All1CC7rZfUUjbfGrSg7v9bH5PzifqXoKnc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/dirmenus/GetDirMenus",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"dirmenus",
+								"GetDirMenus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "employemnt_type_code",
+			"item": [
+				{
+					"name": "localhost:5000/employment_type_code/GetEmploymentTypeCode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4Nzg3MjEzMSwiZXhwIjoxNjg3ODc1NzMxfQ._4EK702J4a1dgUkHETA_hS-9gqP0wAkvEaZFSYxLZX4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/employment_type_code/GetEmploymentTypeCode",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employment_type_code",
+								"GetEmploymentTypeCode"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Emp_category",
+			"item": [
+				{
+					"name": "localhost:5000/employment_category/GetEmploymentCategory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4Nzg3NDI2NiwiZXhwIjoxNjg3ODc3ODY2fQ.KDYAkdOvH6PPspXAKPql8ze-v9Ar3meHp-tOqSR8EHk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/employment_category/GetEmploymentCategory",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employment_category",
+								"GetEmploymentCategory"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Emp_Leave_category",
+			"item": [
+				{
+					"name": "localhost:5000/employment_leave_category/GetEmploymentLeaveCategory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4Nzg3NTc4NiwiZXhwIjoxNjg3ODc5Mzg2fQ.LkRNVBlLTrgPmhy0gFx9nCvMR8fFIJJ44d2Zbc3RJTE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/employment_leave_category/GetEmploymentLeaveCategory",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employment_leave_category",
+								"GetEmploymentLeaveCategory"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Emp_payroll",
+			"item": [
+				{
+					"name": "localhost:5000/employment_payroll/GetEmploymentPayroll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4Nzg3ODMzMCwiZXhwIjoxNjg3ODgxOTMwfQ.ELleETPGCt4-avVAQ5ZDUW9hDqBIHI_oXOz-tAvqjsM",
+								"description": "0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/employment_payroll/GetEmploymentPayroll",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employment_payroll",
+								"GetEmploymentPayroll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Shift_code",
+			"item": [
+				{
+					"name": "localhost:5000/employment_shift/GetEmploymentShift",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4Nzg3ODI2NCwiZXhwIjoxNjg3ODgxODY0fQ.UCqOtVtIymOO1Q4iPXai1T6OSCikvlfFwNhma58ua8o",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/employment_shift/GetEmploymentShift",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employment_shift",
+								"GetEmploymentShift"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Desig_code",
+			"item": [
+				{
+					"name": "localhost:5000/employment_desig/GetEmploymentDesig",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4Nzg4MDQ0MCwiZXhwIjoxNjg3ODg0MDQwfQ.CbLacybQNbddVXdIi_MaeoZOEJDao_bmWnOokrtoQeE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/employment_desig/GetEmploymentDesig",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employment_desig",
+								"GetEmploymentDesig"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cost_Centre_code",
+			"item": [
+				{
+					"name": "localhost:5000/employment_cost_center/GetEmploymentCostCenter",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4Nzg4MDIzMCwiZXhwIjoxNjg3ODgzODMwfQ.0-ZO3osfcTHh2LHj4qoiUgc4BZScbsequKm1WyfiPMc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/employment_cost_center/GetEmploymentCostCenter",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employment_cost_center",
+								"GetEmploymentCostCenter"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Section_code",
+			"item": [
+				{
+					"name": "localhost:5000/employment_section_code/GetEmploymentSectionCode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4Nzg4MTE4MCwiZXhwIjoxNjg3ODg0NzgwfQ.C-uyXjItw29jLc42o3csLX8GPoRFtplF5gnPGWiXH64",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/employment_section_code/GetEmploymentSectionCode",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employment_section_code",
+								"GetEmploymentSectionCode"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GradeCode",
+			"item": [
+				{
+					"name": "localhost:5000/grade_code/GetGradeCode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4Nzk1MDk4MSwiZXhwIjoxNjg3OTU0NTgxfQ.rtNsoDRt7FMwkLrUMCB8Li9cYE-V1oyDVZMhrVx0As8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/grade_code/GetGradeCode",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"grade_code",
+								"GetGradeCode"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EduCode",
+			"item": [
+				{
+					"name": "localhost:5000/education_code/GetEducationCode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4Nzk1MDk4MSwiZXhwIjoxNjg3OTU0NTgxfQ.rtNsoDRt7FMwkLrUMCB8Li9cYE-V1oyDVZMhrVx0As8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/education_code/GetEducationCode",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"education_code",
+								"GetEducationCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/education_code/InsertTranEducation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODQ4MzM0NCwiZXhwIjoxNjg4NDg2OTQ0fQ.xYfauFTRBs43l_LD5MHzBIG9NdT5whmHzT-VRpwVwFc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Sequence_no\":2,\r\n    \"EduCode\":0,\r\n    \"EduYear\":2019,\r\n    \"EduGrade\":12,\r\n    \"Topflag\":9,\r\n    \"institutecode\":223\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/education_code/InsertTranEducation",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"education_code",
+								"InsertTranEducation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/eduation_code/GetTranEducationByEmpCode/2",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODQ3MDQ4NCwiZXhwIjoxNjg4NDc0MDg0fQ.5-acW5TlBSzbB297Trzdxvl6LNmyf8HwKpiwRO1FB90",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/eduation_code/GetTranEducationByEmpCode/2",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"eduation_code",
+								"GetTranEducationByEmpCode",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/eduation_code/deleteTranEducation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODQ3MjkzMywiZXhwIjoxNjg4NDc2NTMzfQ.NE8fFLpimVuBquw8N8_2oDJAquq5hq5y_Uc8BOwsMVc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Sr_No\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/eduation_code/deleteTranEducation",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"eduation_code",
+								"deleteTranEducation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/eduation_code/UpdateTranEducation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODQ3MzQ5MSwiZXhwIjoxNjg4NDc3MDkxfQ.knDz9SiKdBTgAR9ckUt1E2Je-yMZTslavDWcpjtErsc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"srNo\":1,\r\n    \"EduCode\":0,\r\n    \"EduYear\":2020,\r\n    \"EduGrade\":12,\r\n    \"Topflag\":9,\r\n    \"institutecode\":223\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/eduation_code/UpdateTranEducation",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"eduation_code",
+								"UpdateTranEducation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LocCode",
+			"item": [
+				{
+					"name": "localhost:5000/location_code/GetEmploymentLocationCode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODM2OTU1NSwiZXhwIjoxNjg4MzczMTU1fQ.JNPfLLeWHl55JQDu7eW0S-DQCxZW2CoMVcdCw5jZiy8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/location_code/GetEmploymentLocationCode",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"location_code",
+								"GetEmploymentLocationCode"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ReligionCode",
+			"item": [
+				{
+					"name": "localhost:5000/religion_code/GetEmploymentReligionCode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODM2OTU1NSwiZXhwIjoxNjg4MzczMTU1fQ.JNPfLLeWHl55JQDu7eW0S-DQCxZW2CoMVcdCw5jZiy8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/religion_code/GetEmploymentReligionCode",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"religion_code",
+								"GetEmploymentReligionCode"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MasterAllEmployees",
+			"item": [
+				{
+					"name": "localhost:5000/master_all_employees/GetMasterAllEmployees",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODM5NjcyNiwiZXhwIjoxNjg4NDAwMzI2fQ.4vUCxSTkIhysspIrer5guTE9cZV6zOfxSHwStamae28",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/master_all_employees/GetMasterAllEmployees",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"master_all_employees",
+								"GetMasterAllEmployees"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "appointments",
+			"item": [
+				{
+					"name": "localhost:5000/appointments/AppointmentsSavePersonel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/crmfrontend/src/assets/images/icons/wordIco.webp"
+								},
+								{
+									"key": "Emp_name",
+									"value": "hamzu",
+									"type": "text"
+								},
+								{
+									"key": "Emp_Father_name",
+									"value": "rehman",
+									"type": "text"
+								},
+								{
+									"key": "Emp_sex_code",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "Emp_marital_status",
+									"value": "married",
+									"type": "text"
+								},
+								{
+									"key": "Emp_address_line1",
+									"value": "Karachi,Pakistan",
+									"type": "text"
+								},
+								{
+									"key": "Emp_address_line2",
+									"value": "Karachi,Pakistan",
+									"type": "text"
+								},
+								{
+									"key": "Emp_home_tel1",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "Emp_home_tel2",
+									"value": "67890",
+									"type": "text"
+								},
+								{
+									"key": "Emp_office_tel1",
+									"value": "11111",
+									"type": "text"
+								},
+								{
+									"key": "Emp_office_tel2",
+									"value": "2222",
+									"type": "text"
+								},
+								{
+									"key": "Emp_mobile_No",
+									"value": "032123232",
+									"type": "text"
+								},
+								{
+									"key": "Emp_email",
+									"value": "aqibrehman13@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "Emp_nic_no",
+									"value": "42101-23332-1",
+									"type": "text"
+								},
+								{
+									"key": "Emp_NIC_Issue_date",
+									"value": "2023/05/20",
+									"type": "text"
+								},
+								{
+									"key": "Emp_NIC_Expiry_date",
+									"value": "2028/05/12",
+									"type": "text"
+								},
+								{
+									"key": "Emp_Retirement_age",
+									"value": "55",
+									"type": "text"
+								},
+								{
+									"key": "Emp_ntn_no",
+									"value": "00",
+									"type": "text"
+								},
+								{
+									"key": "Emp_birth_date",
+									"value": "2001/05/10",
+									"type": "text"
+								},
+								{
+									"key": "Vehicle_Registration_Number",
+									"value": "12212112",
+									"type": "text"
+								},
+								{
+									"key": "Contact_Person_Name",
+									"value": "hamza",
+									"type": "text"
+								},
+								{
+									"key": "Relationship",
+									"value": "married",
+									"type": "text"
+								},
+								{
+									"key": "Contact_address1",
+									"value": "Lahore,Pakistan",
+									"type": "text"
+								},
+								{
+									"key": "Contact_address2",
+									"value": "Lahore,Pakistan",
+									"type": "text"
+								},
+								{
+									"key": "Contact_home_tel1",
+									"value": "032123212111",
+									"type": "text"
+								},
+								{
+									"key": "Contact_home_tel2",
+									"value": "+92321445456",
+									"type": "text"
+								},
+								{
+									"key": "Emp_Blood_Group",
+									"value": "positive",
+									"type": "text"
+								},
+								{
+									"key": "Employment_Type_code",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "Emp_category",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "Emp_Leave_category",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "Emp_Payroll_category",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "Shift_code",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "Desig_code",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "Cost_Centre_code",
+									"value": "988",
+									"type": "text"
+								},
+								{
+									"key": "Section_code",
+									"value": "2121221",
+									"type": "text"
+								},
+								{
+									"key": "Grade_code",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "Edu_code",
+									"value": "222",
+									"type": "text"
+								},
+								{
+									"key": "Loc_code",
+									"value": "889",
+									"type": "text"
+								},
+								{
+									"key": "Religion_Code",
+									"value": "3434",
+									"type": "text"
+								},
+								{
+									"key": "Supervisor_Code",
+									"value": "76",
+									"type": "text"
+								},
+								{
+									"key": "ContractExpiryDate",
+									"value": "2023/12/09",
+									"type": "text"
+								},
+								{
+									"key": "Emp_ID",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "Offer_Letter_date",
+									"value": "2023/02/23",
+									"type": "text"
+								},
+								{
+									"key": "Tentative_Joining_date",
+									"value": "2023/08/20",
+									"type": "text"
+								},
+								{
+									"key": "RefferedBy",
+									"value": "Aqib Rehman",
+									"type": "text"
+								},
+								{
+									"key": "Probationary_period_months",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "Notice_period_months",
+									"value": "06",
+									"type": "text"
+								},
+								{
+									"key": "Extended_confirmation_days",
+									"value": "45",
+									"type": "text"
+								},
+								{
+									"key": "Permanent_address",
+									"value": "house no 6/6 sector 12-D Fb area ",
+									"type": "text"
+								},
+								{
+									"key": "Nationality",
+									"value": "Pakistani",
+									"type": "text"
+								},
+								{
+									"key": "roster_group_code",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "card_no",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "Position_Code",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "Company_Code",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "UserCode",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://hrmbackend.logomish.com/appointments/AppointmentsSavePersonel",
+							"protocol": "https",
+							"host": [
+								"hrmbackend",
+								"logomish",
+								"com"
+							],
+							"path": [
+								"appointments",
+								"AppointmentsSavePersonel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/appointments/GetAppointmentsBySeqNo/42",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODU2NDA5NSwiZXhwIjoxNjg4NTY3Njk1fQ.jDuzOYX-ZHWB13Rg8hEl3PRxgD-d3mhSgN7tbIWOEk0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/appointments/GetAppointmentsBySeqNo/45",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"appointments",
+								"GetAppointmentsBySeqNo",
+								"45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/appointments/GetTranAppointmentsByCompanyCode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODQ2NzAwNCwiZXhwIjoxNjg4NDcwNjA0fQ.SiSKWBaIN-DlNG8WN9XZxJ-QdR2KBL9yF308O3iwtr0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/appointments/GetTranAppointmentsByCompanyCode",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"appointments",
+								"GetTranAppointmentsByCompanyCode"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "institutions",
+			"item": [
+				{
+					"name": "localhost:5000/institutions/GetInstitutions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODQ1ODQxMCwiZXhwIjoxNjg4NDYyMDEwfQ.E7UM-QFyjWMlJfXMYxlwnFGYAWUqIA1gtpelqnvI-6g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/institutions/GetInstitutions",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"institutions",
+								"GetInstitutions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "positions",
+			"item": [
+				{
+					"name": "localhost:5000/positions/GetPositionCode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODQ2MjYwOCwiZXhwIjoxNjg4NDY2MjA4fQ.-iwbnFezXcaY8r3Pch9siQhYVh-Mo52-M2Xn-t5k60s",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/positions/GetPositionCode",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"positions",
+								"GetPositionCode"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "All_Employeer",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/allemployer/GetAllEmployer",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODQ3NDI2OCwiZXhwIjoxNjg4NDc3ODY4fQ.b22CyLkuUBdaThhptPx8mKvs39vFOjVFjJ5DnyYGBn4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/allemployer/GetAllEmployer",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"allemployer",
+								"GetAllEmployer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "experiences",
+			"item": [
+				{
+					"name": "localhost:5000/employement_experience/CreateTranExperience",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODQ3ODczMSwiZXhwIjoxNjg4NDgyMzMxfQ.OjkVDoypPuuixA0YHMuEDR5FJx89ENYuRVG3EkdC1oo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Sequence_no\":2,\r\n    \"EmployerCode\":2,\r\n    \"designation\":\"dadasd\",\r\n    \"department\":\"dssadsad\",\r\n    \"Start_Date\":\"2023/04/04\",\r\n    \"End_Date\":\"2023/05/05\",\r\n    \"SubmitFlag\":\"y\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/employement_experience/CreateTranExperience",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employement_experience",
+								"CreateTranExperience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/employement_experience/UpdateTranExperience",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODQ3ODczMSwiZXhwIjoxNjg4NDgyMzMxfQ.OjkVDoypPuuixA0YHMuEDR5FJx89ENYuRVG3EkdC1oo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"EmployerCode\":3,\r\n    \"designation\":\"dadasd\",\r\n    \"department\":\"dssadsad\",\r\n    \"Start_Date\":\"2023/04/04\",\r\n    \"End_Date\":\"2023/05/05\",\r\n    \"SubmitFlag\":\"y\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/employement_experience/UpdateTranExperience",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employement_experience",
+								"UpdateTranExperience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/employement_experience/deleteTranExperience",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODQ3ODczMSwiZXhwIjoxNjg4NDgyMzMxfQ.OjkVDoypPuuixA0YHMuEDR5FJx89ENYuRVG3EkdC1oo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/employement_experience/deleteTranExperience",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employement_experience",
+								"deleteTranExperience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/employement_experience/GetTranExperienceByEmpCode/2",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODQ3ODczMSwiZXhwIjoxNjg4NDgyMzMxfQ.OjkVDoypPuuixA0YHMuEDR5FJx89ENYuRVG3EkdC1oo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/employement_experience/GetTranExperienceByEmpCode/2",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employement_experience",
+								"GetTranExperienceByEmpCode",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "allownces",
+			"item": [
+				{
+					"name": "localhost:5000/allownces/GetAllAllownces",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODU0Mzk4OCwiZXhwIjoxNjg4NTQ3NTg4fQ.RiUlXG--xWZqC-l8iNkHO8Q41JO82_QEYu6YUS95hB0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/allownces/GetAllAllownces",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"allownces",
+								"GetAllAllownces"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "checklist",
+			"item": [
+				{
+					"name": "localhost:5000/checklist/GetAllCheckList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODU0Mzk4OCwiZXhwIjoxNjg4NTQ3NTg4fQ.RiUlXG--xWZqC-l8iNkHO8Q41JO82_QEYu6YUS95hB0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/checklist/GetAllCheckList",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"checklist",
+								"GetAllCheckList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/checklist/InsertCheckList",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODU1ODI4MywiZXhwIjoxNjg4NTYxODgzfQ.0MaMOs_7XUEK9zMGk2qFvFctMCrJPCdWeC1SdqtvvE4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Sequence_no\":45,\r\n    \"FirstTimeFlag\":\"Y\",\r\n    \"items\":[{\"item\":1}]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/checklist/InsertCheckList",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"checklist",
+								"InsertCheckList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/checklist/GetTranhiringchecklistBySeqNo/45",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODU1OTMzOCwiZXhwIjoxNjg4NTYyOTM4fQ.uIgZFgXQ350ykeeAmd9HsDoLEA80Jd0rxKRdKoA--OY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/checklist/GetTranhiringchecklistBySeqNo/45",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"checklist",
+								"GetTranhiringchecklistBySeqNo",
+								"45"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "employeeSalary",
+			"item": [
+				{
+					"name": "localhost:5000/employee_salary/InsertEmployeeSalary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODU1Mzg2MywiZXhwIjoxNjg4NTU3NDYzfQ.tIQEAbAXk55RmPrhJ3Jt0X5BvC1QjpdCh12gdcRoH8o",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Sequence_no\":45,\r\n    \"FirstTimeFlag\":\"N\",\r\n    \"allownces\":[\r\n        {\"code\":1,\"amount\":34},\r\n        {\"code\":4,\"amount\":45}\r\n    ]\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/employee_salary/InsertEmployeeSalary",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employee_salary",
+								"InsertEmployeeSalary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/employee_salary/GetEmployeeSalaryBySeqNo/45",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODU1NTA5MCwiZXhwIjoxNjg4NTU4NjkwfQ.pZODLX-fGuncunwBMhtzhKWsqHkfF0ZSRlzlDA-9uHs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/employee_salary/GetEmployeeSalaryBySeqNo/45",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"employee_salary",
+								"GetEmployeeSalaryBySeqNo",
+								"45"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "paymentMode",
+			"item": [
+				{
+					"name": "localhost:5000/payment_mode/GetPaymentMode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODU2MzE4NywiZXhwIjoxNjg4NTY2Nzg3fQ.yBn89cEYHSw1OVoqgekzeAHDuIsFHoOEL-QI_8iNhNE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/payment_mode/GetPaymentMode",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"payment_mode",
+								"GetPaymentMode"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "banks",
+			"item": [
+				{
+					"name": "localhost:5000/banks/GetBankBranches",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODU2MzE4NywiZXhwIjoxNjg4NTY2Nzg3fQ.yBn89cEYHSw1OVoqgekzeAHDuIsFHoOEL-QI_8iNhNE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/banks/GetBankBranches",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"banks",
+								"GetBankBranches"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "payroll",
+			"item": [
+				{
+					"name": "localhost:5000/payroll/InsertPayroll",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODU2ODMxMCwiZXhwIjoxNjg4NTcxOTEwfQ.0w_m2GLsKHR2XZvogGqUw8K9z-Gq2NSYnqy5mk0tuHg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Sequence_no\":45,\r\n    \"Mode_Of_Payment\":1,\r\n    \"Recreation_Club_Flag\":\"Y\",\r\n    \"Meal_Deduction_Flag\":\"Y\",\r\n    \"Union_Flag\":\"Y\",\r\n    \"Overtime_Flag\":\"Y\",\r\n    \"Incentive_Flag\":\"Y\",\r\n    \"Bonus_Type\":\"Y\",\r\n    \"SESSI_Flag\":\"Y\",\r\n    \"EOBI_Flag\":\"Y\",\r\n    \"SESSI_Number\":\"wqwqwdwqd\",\r\n    \"EOBI_Number\":\"dasdas\",\r\n    \"Account_Type1\":\"sdsadsa\",\r\n    \"Bank_Account_No1\":\"asdasdas\",\r\n    \"Branch_Code1\":1,\r\n    \"Bank_Amount_1\":321,\r\n    \"Bank_Percent_1\":12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/payroll/InsertPayroll",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"payroll",
+								"InsertPayroll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/payroll/GetPayRollBySeqNo/45",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODU3MDYwNSwiZXhwIjoxNjg4NTc0MjA1fQ.6HgCyBLDtmBoETOfe48qIekhSN274rEOjbxXGuA8OvE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/payroll/GetPayRollBySeqNo/45",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"payroll",
+								"GetPayRollBySeqNo",
+								"45"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "marriages",
+			"item": [
+				{
+					"name": "localhost:5000/marriages/InsertTranMarriages",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MSwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoyLCJjb21wYW55X2NvZGUiOjIsImlhdCI6MTY4ODY0NTIyNywiZXhwIjoxNjg4NjQ4ODI3fQ.ihW9bShlMxg557K8-_6wBuA-VtK2HQxv2R5rfa-ntuw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Sequenceno\":45,\r\n    \"MarriageDate\":\"2023-05-05\",\r\n    \"Spausename\":\"asdsaa\",\r\n    \"SpauseDOB\":\"2023-06-06\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/marriages/InsertTranMarriages",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"marriages",
+								"InsertTranMarriages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/marriages/UpdateTranMarriages",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODYzNDg0NywiZXhwIjoxNjg4NjM4NDQ3fQ.lDk-ZBGvtKR8lNeTHxmTWe5Xj-28Ys7Cklt2ZFa9AFU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Sequenceno\":45,\r\n    \"MarriageDate\":\"2023-05-05\",\r\n    \"Spausename\":\"hello\",\r\n    \"SpauseDOB\":\"2023-06-06\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/marriages/UpdateTranMarriages",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"marriages",
+								"UpdateTranMarriages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/marriages/DeleteTranMarriages",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODYzNDg0NywiZXhwIjoxNjg4NjM4NDQ3fQ.lDk-ZBGvtKR8lNeTHxmTWe5Xj-28Ys7Cklt2ZFa9AFU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Sequenceno\":45\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/marriages/DeleteTranMarriages",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"marriages",
+								"DeleteTranMarriages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/marriages/GetTranMarriagesBySeqNo/45",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MCwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoxLCJjb21wYW55X2NvZGUiOjEsImlhdCI6MTY4ODYzNDg0NywiZXhwIjoxNjg4NjM4NDQ3fQ.lDk-ZBGvtKR8lNeTHxmTWe5Xj-28Ys7Cklt2ZFa9AFU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/marriages/GetTranMarriagesBySeqNo/45",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"marriages",
+								"GetTranMarriagesBySeqNo",
+								"45"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "families",
+			"item": [
+				{
+					"name": "localhost:5000/families/CreateFamilies",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MSwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoyLCJjb21wYW55X2NvZGUiOjIsImlhdCI6MTY4ODY0NTIyNywiZXhwIjoxNjg4NjQ4ODI3fQ.ihW9bShlMxg557K8-_6wBuA-VtK2HQxv2R5rfa-ntuw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Sequenceno\":45,\r\n    \"FamMemberType\":\"D\",\r\n    \"FamMemberName\":\"hamzu\",\r\n    \"FamMemberDOB\":\"2023-05-05\",\r\n    \"CNICNo\":\"312321312312312\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/families/CreateFamilies",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"families",
+								"CreateFamilies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/families/UpdateTranFamilies",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MSwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoyLCJjb21wYW55X2NvZGUiOjIsImlhdCI6MTY4ODY0NTIyNywiZXhwIjoxNjg4NjQ4ODI3fQ.ihW9bShlMxg557K8-_6wBuA-VtK2HQxv2R5rfa-ntuw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Sno\":1,\r\n    \"Sequenceno\":45,\r\n    \"FamMemberType\":\"D\",\r\n    \"FamMemberName\":\"hamzua\",\r\n    \"FamMemberDOB\":\"2023-05-05\",\r\n    \"CNICNo\":\"312321312312312\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/families/UpdateTranFamilies",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"families",
+								"UpdateTranFamilies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/families/DeleteTranFamilies",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MSwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoyLCJjb21wYW55X2NvZGUiOjIsImlhdCI6MTY4ODY0NTIyNywiZXhwIjoxNjg4NjQ4ODI3fQ.ihW9bShlMxg557K8-_6wBuA-VtK2HQxv2R5rfa-ntuw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Sequenceno\":45,\r\n    \"Sno\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/families/DeleteTranFamilies",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"families",
+								"DeleteTranFamilies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/families/GetTranFamiliesBySNo/1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MSwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoyLCJjb21wYW55X2NvZGUiOjIsImlhdCI6MTY4ODY0NTIyNywiZXhwIjoxNjg4NjQ4ODI3fQ.ihW9bShlMxg557K8-_6wBuA-VtK2HQxv2R5rfa-ntuw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/families/GetTranFamiliesBySNo/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"families",
+								"GetTranFamiliesBySNo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/families/GetTranFamiliesBySeqNo/45",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "Bareer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbXBfY29kZSI6MSwiRW1wX25hbWUiOiJhZG1pbiIsIkhSX3NlY3VyaXR5X2xldmVsIjpudWxsLCJQYXlyb2xsX3NlY3VyaXR5X2xldmVsIjpudWxsLCJBbGxvd19DYWxjdWxhdGVfQnV0dG9uIjpudWxsLCJTaG93X093bl9BcHByYWlzYWxfRm9ybSI6bnVsbCwiU2hvd19FYXJuaW5nX0Zvcm0iOm51bGwsIkVtcF9Vc2VyX0lEIjpudWxsLCJTb3J0X2tleSI6bnVsbCwicGFzc3dvcmRfQ2hhbmdlX2ZsYWciOm51bGwsIldyb25nX1Bhc3N3b3JkX0NvdW50IjpudWxsLCJQYXNzd29yZF9DaGFuZ2VfRGF0ZSI6bnVsbCwiUmVwb3J0X1NhbGFyeV9PcHRpb25fVmlld19GbGFnIjpudWxsLCJSb2xlX0NvZGUiOm51bGwsImlkIjoyLCJjb21wYW55X2NvZGUiOjIsImlhdCI6MTY4ODY0NTIyNywiZXhwIjoxNjg4NjQ4ODI3fQ.ihW9bShlMxg557K8-_6wBuA-VtK2HQxv2R5rfa-ntuw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/families/GetTranFamiliesBySeqNo/45",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"families",
+								"GetTranFamiliesBySeqNo",
+								"45"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
